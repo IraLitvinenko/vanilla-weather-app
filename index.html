@@ -12,16 +12,17 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Kyiv</h1>
+            <h1 id="city">Kyiv</h1>
             <ul>
               <li>Sunday 19:00</li>
-              <li>Cloudy</li>
+              <li id="description">Cloudy</li>
             </ul>
           </div>
           <div class="row">
@@ -34,15 +35,14 @@
                 />
                 <div>
                   <strong id="temperature">-6</strong
-                  ><span class="units">°C | °F</span>
+                  ><span class="units">°C | <a href="#">°F</a></span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 70%</li>
-                <li>Wind: 10km/h</li>
+                <li>Humidity: <span id="humidity">70</span>%</li>
+                <li>Wind: <span id="wind">10</span>km/h</li>
               </ul>
             </div>
           </div>
@@ -56,6 +56,6 @@
         >
       </div>
     </div>
-    <script src="/src/app.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
