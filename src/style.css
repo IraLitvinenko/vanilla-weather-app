@@ -36,9 +36,10 @@ li:first-letter {
 .weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #cff5e7;
-  font-family: "Fira Sans", b sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
 }
 .overview {
   margin-bottom: 20px;
